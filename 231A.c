@@ -2,7 +2,7 @@
 #include <stdlib.h>
 int main(){
     int N;
-    char Problem[6];
+    char Problem[10];
     int choice = 1;
     int count=0 ,max = 0;
     do{
@@ -11,9 +11,13 @@ int main(){
 
     fflush(stdin);
     for(int i = 1; i <= N; i++){
-        scanf(Problem, sizeof(Problem), stdin);
+        scanf("%s",&Problem);
         count = 0;
-        for(int j = 0 ;j < 5; j++) if(Problem[j]=='1') count++;
+        for(int j = 0 ;j < 5; j++) {
+            if(Problem[j]=='1') {
+                count++;
+                printf("%d",count);
+        }
         if(count > max){
             max = count;
             choice=i;
