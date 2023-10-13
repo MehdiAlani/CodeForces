@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+// https://codeforces.com/problemset/problem/71/A
 int main(){
     int N , SizeOfWord,j,i=0;
     do{
